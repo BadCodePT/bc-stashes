@@ -1,4 +1,4 @@
-# bc-stashes
+# BC-Stashes
 
 **Custom stash system for QBox + ox_inventory**
 
@@ -25,7 +25,9 @@ It supports both:
 
 ## Configuration
 
-Edit `config.lua` to switch between E prompt and target mode and define stashes:
+Edit `config.lua` 
+    - to define stashes
+    - switch between E prompt and target mode
 
 ```lua
 Config.UseTarget = true -- true = target, false = E prompt
@@ -43,3 +45,5 @@ Config.Stashes = {
         }
     },
 }
+
+
