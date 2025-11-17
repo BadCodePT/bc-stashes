@@ -1,0 +1,13 @@
+# Ignore server cache
+cache/
+build/
+
+# Node / frontend
+node_modules/
+
+# Lua compiled files
+*.luac
+
+# OS junk
+.DS_Store
+Thumbs.db
