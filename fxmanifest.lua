@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game 'gta5'
 
 name 'BC-Stashes'
-author 'BadCode'
+author 'BadCodePT'
 description 'Custom stash locations with job/gang/player access for QBox + ox_inventory'
 version '1.0.0'
 

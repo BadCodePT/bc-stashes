@@ -1,6 +1,7 @@
+
+-- Runs once to setup all stashes on startup
 CreateThread(function()
     for stashId, stash in pairs(Config.Stashes) do
-
         if Config.UseTarget then
             ------------------------------------------
             -- TARGET MODE
@@ -43,26 +44,3 @@ CreateThread(function()
     end
 end)
 
---[[
-
-CreateThread(function()
-    for stashId, stash in pairs(Config.Stashes) do
-        lib.zones.sphere({
-            coords = stash.coords,
-            radius = 1.5,
-            onEnter = function()
-                lib.showTextUI("[E] Open Stash")
-            end,
-            onExit = function()
-                lib.hideTextUI()
-            end,
-            inside = function()
-                if IsControlJustReleased(0, 38) then
-                    TriggerServerEvent("customstashes:open", stashId)
-                end
-            end
-        })
-    end
-end)
-
-]]
