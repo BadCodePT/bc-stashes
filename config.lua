@@ -19,6 +19,9 @@ Config.Stashes = {
         }
     },
 
+}
+
+--[[
     -- Example for Gangs
     ["gang_lootstash"] = {
         label = "Ballas Loot Stash",
@@ -67,4 +70,4 @@ Config.Stashes = {
             everyone = true
         }
     },
-}
+]]

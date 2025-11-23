@@ -20,7 +20,6 @@ CreateThread(function()
                     }
                 }
             })
-
         else
             ------------------------------------------
             -- E PROMPT MODE
@@ -43,7 +42,6 @@ CreateThread(function()
         end
     end
 end)
-
 
 --[[
 

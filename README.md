@@ -27,7 +27,7 @@ It supports both:
 
 Edit `config.lua` 
 - **to define stashes**
-- **switch between E prompt and target mode** 
+- **switch between `E prompt` and `target mode`** 
 
 ```lua
 Config.UseTarget = true -- true = target, false = E prompt
