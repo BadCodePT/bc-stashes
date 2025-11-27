@@ -1,3 +1,4 @@
+-- will be updated to use QB-Core and ESX Framework
 local QBox = exports.qbx_core
 local ox = exports.ox_inventory
 
