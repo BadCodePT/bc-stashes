@@ -70,4 +70,18 @@ Config.Stashes = {
             everyone = true
         }
     },
+
+    -- Idea from [Ucok Setiawan]
+    ["secret_personal_3"] = {
+        label = "Secret Stash",
+        coords = vec3(279.31, -969.83, 29.42),
+        size = { slots = 60, weight = 25000 },
+        access = {
+            jobs = {},
+            gangs = {},
+            citizens = {},
+            everyone = true,
+            personal = true, --  'true' for personal stash
+        }
+    },
 ]]

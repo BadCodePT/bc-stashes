@@ -42,7 +42,7 @@ CreateThread(function()
             stash.label,
             stash.size.slots,
             stash.size.weight,
-            false -- no owner restriction
+            stash.access.personal or false -- owner restriction 
         )
         -- print("^2Registered stash: ^7" .. stashId)
     end
