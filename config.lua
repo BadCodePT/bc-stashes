@@ -6,6 +6,20 @@ Config.Stashes = {
     -- These are examples need to change for your server 
     -- You can place more then one specific job, gang, citizin just remember to put the comma after each one. Ex: {police = 2, ems = 2 }
 
+    -- Example: Public Stash Everyone can access it.
+    ["public_stash"] = {
+        label = "Public Stash",
+        coords = vec3(1741.29, 3317.43, 40.22),
+        size = { slots = 30, weight = 15000 },
+        access = {
+            everyone = true
+        }
+    },
+
+}
+
+--[[
+
     -- Example for Jobs
     ["police_armory"] = {
         label = "Police Armory",
@@ -19,9 +33,6 @@ Config.Stashes = {
         }
     },
 
-}
-
---[[
     -- Example for Gangs
     ["gang_lootstash"] = {
         label = "Ballas Loot Stash",
@@ -35,7 +46,7 @@ Config.Stashes = {
         }
     },
 
-    -- Example for Personal Stashes for one player
+    -- Example: Personal Stashes for designated player
     ["secret_personal_1"] = {
         label = "Secret Stash",
         coords = vec3(279.43, -971.93, 29.42),
@@ -43,12 +54,12 @@ Config.Stashes = {
         access = {
             jobs = {},
             gangs = {},
-            citizens = { YX11L004 = true, }, -- specific player
+            citizens = { YX11L004 = true, }, -- specific player CID
             everyone = false
         }
     },
 
-    -- Example for Personal Stashes for many players
+    -- Example: Personal Stashes for designated players
     ["secret_personal_2"] = {
         label = "Secret Stash",
         coords = vec3(279.31, -969.83, 29.42),
@@ -56,18 +67,24 @@ Config.Stashes = {
         access = {
             jobs = {},
             gangs = {},
-            citizens = { YX11L004 = true, SEG8C2H8 = true }, -- specific players
+            citizens = { YX11L004 = true, SEG8C2H8 = true }, -- specific players CID 
             everyone = false
         }
     },
 
-    -- Example for Everyone to acces the stash
-    ["public_dumpster"] = {
-        label = "Public Dumpster",
-        coords = vec3(-1389.4, -587.5, 30.2),
-        size = { slots = 30, weight = 15000 },
+   -- Example: Personal stashes - Every player has there on stash - suggested by [Ucok Setiawan]
+    ["personal_stash_01"] = {
+        label = "Secret Stash",
+        coords = vec3(1740.75, 3321.61, 40.22),
+        size = { slots = 60, weight = 25000 },
         access = {
-            everyone = true
+            jobs = {},
+            gangs = {},
+            citizens = {},
+            everyone = true,
+            personal = true, --  'true' for personal stash
         }
     },
+
 ]]
+ 
